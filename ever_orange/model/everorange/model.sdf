@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="everorange">
+    <!-- Body -->
+    <link name="base_link">
+      <inertial>
+        <mass>147.8671</mass>
+        <inertia>
+          <ixx>3.000000</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>41.980233</iyy>
+          <iyz>0</iyz>
+          <izz>41.980233</izz>
+        </inertia>
+      </inertial>
+
+      <collision name="main_body_buoyancy">
+        <geometry>
+          <box>
+            <size>2 0.3 0.246445166667</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/ShipModel.dae</uri>
+          </mesh>
+        </geometry>
+	<pose>0 0 0 1.57 0 0</pose>
+        <material>
+          <ambient>0.1 0.1 0.1 1</ambient>
+          <diffuse>0.1 0.1 0.2 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
