@@ -17,7 +17,7 @@
   </asset>
   <library_images>
     <image id="file2-image" name="file2">
-      <init_from>ShipModel_ShipModel_BaseColor.png</init_from>
+      <init_from>../materials/textures/ShipModel_ShipModel_BaseColor.png</init_from>
     </image>
   </library_images>
   <library_materials>
